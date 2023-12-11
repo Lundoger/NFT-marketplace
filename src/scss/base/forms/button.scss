@@ -1,0 +1,61 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: rem(12);
+	font-weight: 600;
+	line-height: 1.4;
+	background-color: $purpleColor;
+	border-radius: rem(20);
+	transition: all 0.3s ease 0s;
+	padding-top: rem(19);
+	padding-bottom: rem(19);
+	white-space: nowrap;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #7234c4;
+		}
+	}
+	&--border {
+		border: rem(2) solid $purpleColor;
+		padding-top: rem(17);
+		padding-bottom: rem(17);
+		background-color: transparent;
+		&::before{
+			color: $purpleColor;
+			transition: color 0.3s ease 0s;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				background-color: $purpleColor;
+				&::before{
+					color: #fff;					
+				}
+			}
+		}
+	}
+	&--white {
+		background-color: #fff;
+		border: rem(2) solid #fff;
+		color: #2B2B2B;
+		&::before{
+			color: $purpleColor;	
+			transition: color 0.3s ease 0s;		
+		}
+		@media (any-hover: hover){
+			&:hover{
+				background: transparent;
+				color: #fff;
+				&::before{
+					color: #fff;					
+				}
+			}
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}

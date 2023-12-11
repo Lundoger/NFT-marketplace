@@ -1,0 +1,232 @@
+.rank {
+
+	&__rating {
+		@include adaptiveValue("margin-top", 180, 90);
+		margin-bottom: rem(40);
+	}
+}
+//========================================================================================================================================================
+.rating {
+
+	&__container {
+	}
+
+	&__heading {
+		&>*:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 20, 10);
+		}
+		@include adaptiveValue("margin-bottom", 80, 30);
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 51, 28);
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	&__subtitle {
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: 1.4;
+	}
+
+	&__tabs {
+	}
+}
+.tabs-rating {
+
+	&__navigation {
+		display: flex;
+		margin-bottom: rem(40);
+	}
+
+	&__title {
+		flex: 1 1 100%;
+		height: rem(60);
+		font-weight: 600;
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: 1.4;
+		text-transform: capitalize;
+		color: #858584;
+		position: relative;
+		transition: color 0.3s ease 0s;
+		&::before{
+			content:'';
+			width: 100%;
+			height: rem(2);
+			background-color: #858584;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform: scaleX(0);
+			transition: transform 0.3s ease 0s;
+		}
+		&._tab-active {
+			color: #fff;
+			&::before{
+				content:'';
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	&__title--pc {
+		@media (max-width:$mobileSmall){
+			display: none; 
+		}
+	}
+
+	&__title--mobile {
+		@media (min-width:$mobileSmall){
+			display: none;
+		}
+	}
+
+	&__label {
+		margin-bottom: rem(20);
+		border: rem(1) solid #3B3B3B;
+		border-radius: rem(20);
+		padding-top: rem(12);
+		padding-bottom: rem(12);
+		@include adaptiveValue("padding-left", 20, 10);
+		@include adaptiveValue("padding-right", 20, 10);
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("gap", 20, 10);
+		&>* {
+			font-family: 'Space Mono';
+			line-height: 1.4;
+			color: #858584;
+		}
+	}
+
+	&__number {
+		flex: 0 1 rem(30);
+		text-align: center;
+	}
+
+	&__user {
+		flex: 0 1 rem(420);
+		@include adaptiveValue("font-size", 16, 12);
+	}
+
+	&__value {
+		flex: 0 1 rem(160);
+		@include adaptiveValue("font-size", 16, 12);
+	}
+
+	&__sold {
+		@media (max-width:$tablet){
+			display: none; 
+		}
+	}
+	&__change {
+		@media (max-width: em(630)){
+			display: none;
+		}
+	}
+
+	&__content {
+	}
+
+	&__body {
+	}
+
+	&__items {
+		display: grid;
+		row-gap: rem(20);
+	}
+
+	&__item {
+	}
+}
+//========================================================================================================================================================
+.item-rating {
+	background-color: #3b3b3b;
+	border-radius: rem(20);
+	padding-top: rem(12);
+	padding-bottom: rem(12);
+	@include adaptiveValue("padding-left", 20, 10);
+	@include adaptiveValue("padding-right", 20, 10);
+	display: flex;
+	align-items: center;
+	@include adaptiveValue("gap", 20, 10);
+	&__number {
+		font-family: 'Space Mono';
+		color: #858584;
+		line-height: 1.4;
+		@media (min-width:$mobile){
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 0 1 rem(30);
+			height: rem(30);
+			border-radius: 50%;
+			background-color: #2b2b2b; 
+		}
+	}
+
+	&__user {
+		flex: 0 1 rem(420);
+		display: flex;
+		@include adaptiveValue("gap", 20, 10);
+		align-items: center;
+	}
+
+	&__avatar {
+		flex: 0 0 rem(60);
+		width: rem(60);
+		height: rem(60);
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (max-width:$mobile){
+			flex: 0 0 rem(24);
+			width: rem(24);
+			height: rem(24); 
+		}
+	}
+
+	&__nickname {
+		@include adaptiveValue("font-size", 22, 14);
+		line-height: 1.4;
+		font-weight: 600;
+		text-transform: capitalize;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				color: $litePurpleColor;
+			}
+		}
+		@media (max-width: em(630)){
+			font-weight: 400;	  
+		}
+	}
+
+	&__value {
+		flex: 0 1 rem(160);
+		font-family: 'Space Mono';
+		line-height: 1.4;
+	}
+
+	&__change {
+		color: #00AC4F;
+		@media (max-width: em(630)){
+			display: none;	  
+		}
+	}
+
+	&__sold {
+		@media (max-width:$tablet){
+			display: none;
+		}
+	}
+
+	&__volume {
+		@include adaptiveValue("font-size", 16, 12);
+	}
+}
+//========================================================================================================================================================

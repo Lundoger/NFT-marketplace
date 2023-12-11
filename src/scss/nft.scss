@@ -1,0 +1,193 @@
+.nft {
+	@include adaptiveValue("margin-top", 100, 54);
+	&__picture {
+		margin-bottom: rem(40);
+	}
+	
+	&__about {
+		@include adaptiveValue("margin-bottom", 120, 80);
+	}
+	&__more {
+		@include adaptiveValue("margin-bottom", 80, 40);
+	}
+}
+//========================================================================================================================================================
+.picture {
+	width: 100%;
+	@include adaptiveValue("height", 600, 300);
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+//========================================================================================================================================================
+.about-nft {
+
+	&__container {
+		display: flex;
+		align-items: start;
+		gap: rem(30);
+	}
+
+	&__body {
+		display: grid;
+		row-gap: rem(30);
+		@media (max-width: em(710)){
+			justify-items: start;	  
+		}
+	}
+
+	&__item {
+		&>*:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 51, 28);
+		font-weight: 600;
+		line-height: 1.4;
+		text-transform: capitalize;
+	}
+
+	&__date {
+		color: #858584;
+		text-transform: capitalize;
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: 1.4;
+	}
+
+	&__label {
+		font-family: 'Space Mono';
+		font-weight: 700;
+		line-height: 1.6;
+		@include adaptiveValue("font-size", 22, 16);	
+		text-transform: capitalize;
+		color: #858584;
+	}
+
+	&__user {
+	}
+
+	&__description {
+		&>*:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		p {
+			@include adaptiveValue("font-size", 22, 16);
+			line-height: 1.4;
+		}
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		row-gap: rem(10);
+	}
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		gap: rem(10);
+		transition: color 0.3s ease 0s;
+		&::before{
+			@include adaptiveValue("font-size", 32, 24);
+			color: #858584;
+			transition: color 0.3s ease 0s;		
+		}
+		@media (any-hover: hover){
+			&:hover{
+				color: $purpleColor;
+				&::before{
+					color: $purpleColor;					
+				}
+			}
+		}
+	}
+
+	&__action {
+		&>*:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__tags {
+		display: flex;
+		align-items: center;
+		gap: rem(20);
+		flex-wrap: wrap;
+	}
+
+	&__tag {
+		padding: rem(12) rem(30);
+		text-transform: uppercase;
+		line-height: 1.4;
+		font-weight: 600;
+		background-color: #3b3b3b;
+		border-radius: rem(20);
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				background-color: $purpleColor;
+			}
+		}
+	}
+}
+//========================================================================================================================================================
+.more-nft {
+
+	&__container {
+		&>*:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 60, 40);
+		}
+	}
+
+	&__heading {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		gap: rem(30);
+	}
+
+	&__title {
+	}
+
+	&__button {
+		padding-right: rem(50);
+		padding-left: rem(50);
+		&::before{
+			font-size: rem(20);			
+		}
+		@media (max-width: em(570)){
+			width: 100%;	  
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 1fr;
+		column-gap: rem(30);
+		@include adaptiveValue("row-gap", 60, 30);
+		@media (max-width: em(910)){
+			grid-template-columns: repeat(2, 1fr);	  
+		}
+		@media (max-width: em(570)){
+			grid-template-columns: auto;
+		}
+	}
+
+	&__item {
+		@media (max-width: em(910)){
+			&:nth-child(n + 7) {
+				display: none;
+			}
+		}
+		@media (max-width: em(570)){
+			&:nth-child(n + 4) {
+				display: none;
+			}		  
+		}
+	}
+}
+//========================================================================================================================================================

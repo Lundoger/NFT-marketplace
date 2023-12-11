@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"NFT Marketplace" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="create-account">
+				<section class="create-account__register register">
+					<div class="register__image">
+						<img src="@img/create-accoumt/01.png" alt="image" />
+					</div>
+					<div class="register__content">
+						<h1 class="register__title">Create account</h1>
+						<p class="register__description">
+							Welcome! enter your details and start creating, 
+							collecting and selling NFTs.
+						</p>
+						<form action="#" class="register__form form">
+							<div class="form__line _icon-user">
+								<input
+									autocomplete="on"
+									data-required
+									type="text"
+									name="form[name]"
+									data-error="Enter your username"
+									placeholder="Username"
+									class="form__input"
+								/>
+							</div>
+							<div class="form__line _icon-mail">
+								<input
+									autocomplete="off"
+									data-required
+									type="email"
+									name="form[email]"
+									data-error="Enter your email"
+									placeholder="Email Address"
+									class="form__input"
+								/>
+							</div>
+							<div class="form__line _icon-lock">
+								<input
+									autocomplete="off"
+									data-required
+									type="password"
+									name="form[password]"
+									data-error="This field is required"
+									placeholder="Password"
+									class="form__input form__viewpass"
+								/>
+								<button type="button" class="form__view-password _icon-eye"></button>
+							</div>
+							<div class="form__line _icon-lock">
+								<input
+									autocomplete="off"
+									data-required
+									type="password"
+									name="form[password]"
+									data-error="This field is required"
+									placeholder="Confirm Password"
+									class="form__input form__viewpass"
+								/>
+								<button type="button" class="form__view-password _icon-eye"></button>
+							</div>
+							<button type="submit" class="form__button button">Create account</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

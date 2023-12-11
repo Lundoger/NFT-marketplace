@@ -1,0 +1,60 @@
+.spollers {
+	display: grid;
+	gap: 15px;
+	&__item {
+	}
+
+	&__title {
+		width: 100%;
+		cursor: default;
+		text-align: left;
+		position: relative;
+		._spoller-init & {
+			cursor: pointer;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				background-color: #fff;
+				height: 2px;
+				width: 15px;
+				transition: transform 0.5s ease 0s;
+			}
+			&::before {
+				transform: translate(-75%, -50%) rotate(40deg);
+			}
+			&::after {
+				transform: translate(0, -50%) rotate(-40deg);
+			}
+			&._spoller-active {
+				&::before {
+					transform: translateX(-75%) rotate(-40deg);
+				}
+				&::after {
+					transform: rotate(40deg);
+				}
+			}
+		}
+	}
+	&__body {
+		&>*:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__li {
+	}
+
+	&__link {
+		color: #CCCCCC;
+		line-height: 1.4;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover){
+			&:hover{
+				color: $purpleColor;
+			}
+		}
+	}
+}

@@ -1,0 +1,297 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.title {
+	text-transform: capitalize;
+	font-weight: 600;
+	@include adaptiveValue("font-size", 38, 28);
+	line-height: 1.4;
+}
+//========================================================================================================================================================
+.subtitle {
+	@include adaptiveValue("font-size", 22, 16);
+	line-height: 1.6;
+}
+//========================================================================================================================================================
+.card {
+	background: #3B3B3B;
+	border-radius: rem(20);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	&__image-ibg {
+		display: block;
+		padding-bottom: 90%;
+		margin-bottom: rem(20);
+		border-radius: rem(20) rem(20) 0 0;
+		overflow: hidden;
+		img {
+			transform: scale(1.02);
+			transition: transform 0.3s ease 0s;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&__info {
+		padding-top: rem(20);
+		padding-bottom: rem(25);
+		@include adaptiveValue("padding-left", 30, 15, 0, 1050, 480);
+		@include adaptiveValue("padding-right", 30, 15, 0, 1050, 480);
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name {
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+
+	&__link-name {
+		font-weight: 600;
+		font-size: rem(22);
+		line-height: 1.4;
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__user {
+		align-self: start;
+		&:not(:last-child) {
+			margin-bottom: rem(25);
+		}
+		flex: 1 1 auto;
+	}
+
+	&__prices {
+		display: flex;
+		justify-content: space-between;
+		gap: rem(20);
+		flex-wrap: wrap;
+	}
+
+	&__price {
+		white-space: nowrap;
+		display: flex;
+		flex-direction: column;
+		gap: rem(8);
+		font-family: 'Space Mono';
+		color: #858584;
+		font-size: rem(12);
+		line-height: 1.1;
+		span {
+			font-size: rem(16);
+			line-height: 1.4;
+			color: #fff;
+		}
+	}
+}
+//========================================================================================================================================================
+.user {
+	display: inline-flex;
+	align-items: flex-start;
+	column-gap: rem(12);
+	@media (any-hover: hover){
+		&:hover{
+			.user__nickname {
+				color: $litePurpleColor;
+			}
+		}
+	}
+	&__avatar {
+		width: rem(24);
+		height: rem(24);
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	&__nickname {
+		line-height: 1.4;
+		transition: color 0.3s ease 0s;
+	}
+}
+//========================================================================================================================================================
+.countdown {
+	background: rgba(59, 59, 59, 0.5);
+	backdrop-filter: blur(5px);
+	border-radius: rem(20);
+	padding: rem(30);
+	font-family: 'Space Mono';
+	@media (max-width:$mobileSmall){
+		width: 100%;
+	}
+	&__label {
+		margin-bottom: rem(10);
+		@include adaptiveValue("font-size", 16, 12);
+		line-height: 1.1;
+	}
+	&__body {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("column-gap", 40, 25);
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+	}
+	&__number {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(5);
+		position: relative;
+		&:not(:last-child) {
+			&::before{
+				content:':';
+				font-weight: 700;
+				line-height: 1.4;
+				font-size: rem(28);
+				text-transform: capitalize;
+				position: absolute;
+				top: 0;
+				right: -50%;
+			}
+		}
+	}
+
+	&__time {
+		font-weight: 700;
+		font-size: rem(38);
+		line-height: 1.2;
+		text-transform: capitalize;
+	}
+
+	&__text {
+		font-size: rem(12);
+		line-height: 1.1;
+	}
+	&__button {
+		width: 100%;
+	}
+}
+//========================================================================================================================================================
+.tabs-nfts {
+
+	&__navigation {
+		display: flex;
+	}
+
+	&__title {
+		flex: 1 1 100%;
+		padding-top: rem(14);
+		padding-bottom: rem(14);
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+		flex-wrap: wrap;
+		justify-content: center;
+		font-weight: 600;
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: 140%;
+		text-transform: capitalize;
+		color: #858584;
+		transition: color 0.3s ease 0s;
+		position: relative;
+		&::before{
+			content:'';
+			width: 100%;
+			height: rem(2);
+			background-color: #858584;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: transform 0.5s ease 0s;
+			transform: scaleX(0);
+		}
+		@media (min-width:$mobileSmall){
+			&::after{
+				content: attr(data-quantity);
+				font-family: 'Space Mono';
+				line-height: 1.4;
+				padding: rem(5) rem(10);
+				border-radius: rem(20);
+				background-color: #3B3B3B;
+				transition: background-color 0.3s ease 0s;
+			} 
+		}
+		&._tab-active {
+			color: #fff;
+			&::before{
+				transform: scaleX(1);
+			}
+			&::after{
+				background-color: #858584;				
+			}
+		}
+	}
+
+	&__content {
+		@include adaptiveValue("padding-top", 60, 40);
+		@include adaptiveValue("padding-bottom", 80, 40);
+		background-color: #3b3b3b;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: rem(30);
+		@media (max-width: em(870)){
+			grid-template-columns: repeat(2, 1fr);	  
+		}
+		@media (max-width: em(580)){
+			grid-template-columns: auto;
+		}
+	}
+
+	&__body {
+
+	}
+
+	&__item {
+		background-color: #2b2b2b;
+		@media (max-width: em(870)){
+			&:nth-child(n + 9) {
+				display: none;
+			}
+		}
+		@media (max-width: em(580)){
+			&:nth-child(n + 5) {
+				display: none;
+			}
+		}
+		&--client {
+			@media (max-width: em(870)){
+				&:nth-child(n + 7) {
+					display: none;
+				}
+			}
+			@media (max-width: em(580)){
+				&:nth-child(n + 4) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+//========================================================================================================================================================
+.nfts {
+	padding-top: rem(10);
+	border-top: rem(1) solid #3b3b3b;
+	&__container {
+	}
+
+	&__tabs {
+	}
+}
+//========================================================================================================================================================

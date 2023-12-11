@@ -1,0 +1,504 @@
+//====================================================================================================
+.header {
+	position: absolute;
+	width: 100%;
+	min-height: rem(91);
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: rem(20);
+	padding-bottom: rem(20);
+	transition: background-color 0.3s ease 0s,
+				padding-top 0.3s ease 0s,
+				padding-bottom 0.3s ease 0s,
+				top 0.8s ease 0s;
+	top: rem(-200);
+	.loaded & {
+		top: 0;
+	}
+	&._header-scroll {
+		position: fixed;
+		padding-top: rem(15);
+		background-color: #2b2b2b;
+		padding-bottom: rem(15);
+	}
+	@media (max-width: $tablet) {
+		min-height: rem(65);
+	}
+	@media (max-width: $mobileSmall) {
+		min-height: rem(54);
+	}
+	&__container {
+		max-width: rem(1180);
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: rem(30);
+	}
+
+	&__logo {
+		flex: 0 0 rem(244);
+		height: rem(35);
+		position: relative;
+		z-index: 10;
+		svg {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 0 0 rem(183);
+			height: rem(24);
+		}
+		.loaded & {
+			@keyframes animate-svg-fill-1 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(162, 89, 255);
+				}
+			}
+
+			.svg-elem-1 {
+				animation: animate-svg-fill-1 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
+			}
+
+			@keyframes animate-svg-fill-2 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(162, 89, 255);
+				}
+			}
+
+			.svg-elem-2 {
+				animation: animate-svg-fill-2 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s both;
+			}
+
+			@keyframes animate-svg-fill-3 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(162, 89, 255);
+				}
+			}
+
+			.svg-elem-3 {
+				animation: animate-svg-fill-3 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s both;
+			}
+
+			@keyframes animate-svg-fill-4 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(162, 89, 255);
+				}
+			}
+
+			.svg-elem-4 {
+				animation: animate-svg-fill-4 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s both;
+			}
+
+			@keyframes animate-svg-fill-5 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(162, 89, 255);
+				}
+			}
+
+			.svg-elem-5 {
+				animation: animate-svg-fill-5 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s both;
+			}
+
+			@keyframes animate-svg-fill-6 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-6 {
+				animation: animate-svg-fill-6 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+			}
+
+			@keyframes animate-svg-fill-7 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-7 {
+				animation: animate-svg-fill-7 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
+			}
+
+			@keyframes animate-svg-fill-8 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-8 {
+				animation: animate-svg-fill-8 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s both;
+			}
+
+			@keyframes animate-svg-fill-9 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-9 {
+				animation: animate-svg-fill-9 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
+			}
+
+			@keyframes animate-svg-fill-10 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-10 {
+				animation: animate-svg-fill-10 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s both;
+			}
+
+			@keyframes animate-svg-fill-11 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-11 {
+				animation: animate-svg-fill-11 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s both;
+			}
+
+			@keyframes animate-svg-fill-12 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-12 {
+				animation: animate-svg-fill-12 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s both;
+			}
+
+			@keyframes animate-svg-fill-13 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-13 {
+				animation: animate-svg-fill-13 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s both;
+			}
+
+			@keyframes animate-svg-fill-14 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-14 {
+				animation: animate-svg-fill-14 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s both;
+			}
+
+			@keyframes animate-svg-fill-15 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-15 {
+				animation: animate-svg-fill-15 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s both;
+			}
+
+			@keyframes animate-svg-fill-16 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-16 {
+				animation: animate-svg-fill-16 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
+			}
+
+			@keyframes animate-svg-fill-17 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-17 {
+				animation: animate-svg-fill-17 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s both;
+			}
+
+			@keyframes animate-svg-fill-18 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-18 {
+				animation: animate-svg-fill-18 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s both;
+			}
+
+			@keyframes animate-svg-fill-19 {
+				0% {
+					fill: transparent;
+				}
+
+				100% {
+					fill: rgb(255, 255, 255);
+				}
+			}
+
+			.svg-elem-19 {
+				animation: animate-svg-fill-19 0.3s
+					cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s both;
+			}
+		}
+	}
+
+	&__menu {
+	}
+
+	&__actions {
+	}
+
+	&__button {
+		padding-left: rem(30);
+		padding-right: rem(30);
+		&::before {
+			font-size: rem(20);
+		}
+		@media (max-width: $tablet) {
+			padding-left: rem(60);
+			padding-right: rem(60);
+			float: right;
+		}
+	}
+}
+.menu {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+	&__icon {
+	}
+
+	&__body {
+		@media (max-width: $tablet) {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			right: -100%;
+			overflow: auto;
+			padding-left: rem(20);
+			padding-right: rem(20);
+			padding-bottom: rem(30);
+			padding-top: rem(80);
+			background-color: #2b2b2b;
+			transition: right 0.3s ease 0s;
+			&::before {
+				content: "";
+				width: 100%;
+				height: rem(65);
+				background-color: #2b2b2b;
+				position: fixed;
+				top: 0;
+				right: -100%;
+				z-index: 2;
+				transition: right 0.3s ease 0s;
+			}
+			.menu-open & {
+				right: 0;
+				&::before {
+					right: 0;
+				}
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: rem(50);
+		row-gap: rem(10);
+		flex-wrap: wrap;
+		--underline-width: 0;
+		--underline-offset-x: 0;
+		position: relative;
+		&::before{
+			content:'';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			height: rem(2);
+			width: var(--underline-width);
+			transform: translateX(var(--underline-offset-x));
+			background-color: $purpleColor;
+			transition: transform 0.5s ease 0s, width 0.5s ease 0s;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			row-gap: rem(30);
+			align-items: flex-end;
+			&:not(:last-child) {
+				margin-bottom: rem(50);
+			}
+		}
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 600;
+		line-height: 1.4;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $purpleColor;
+			}
+		}
+		@media (max-width: $tablet) {
+			font-size: rem(28);
+		}
+	}
+}
+//====================================================================================================
+
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		z-index: 5;
+		@media (any-hover: none) {
+			cursor: default;
+		}
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			position: absolute;
+			height: rem(2);
+			background-color: #fff;
+		}
+		&::before {
+			top: 0;
+			left: 0;
+			width: 70%;
+		}
+		&::after {
+			left: 0;
+			bottom: 0;
+			width: 70%;
+		}
+		span {
+			right: 0;
+			top: calc(50% - rem(1));
+			width: 100%;
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+				width: 100%;
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

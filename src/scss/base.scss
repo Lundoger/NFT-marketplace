@@ -1,0 +1,139 @@
+// Загальний файл елементів форм
+// Для підключення/відключення стилів конкретного елемента форми дивись base/forms/forms.scss
+@import "base/forms/forms";
+
+// Стилі попапів
+// @import "base/popup";
+
+// Стилі спойлерів
+@import "base/spollers";
+
+// Стилі табів
+// @import "base/tabs";
+
+// Стилі мап
+// @import "base/maps";
+
+// Стилі блоку "показати ще"
+// @import "base/showmore";
+
+// Стилі для липкого блоку
+// @import "base/sticky";
+
+// Стилі для повноекранного блоку
+@import "base/fullscreen";
+
+// Стилі для поекраної прокрутки
+// Styles for fullpage scroll
+// @import "base/fullpage";
+
+// Стилі для ripple ефекту
+// Styles for ripple effect
+// @import "base/ripple";
+
+// Стилі для кастомного курсору
+// Styles for custom cursor
+// @import "base/cursor";
+
+// Стилі для чуйних картинок (IBG)
+// Сніппет (HTML): ibg (div з картинкою та класами)
+// Сніппет (HTML): ibga (a з картинкою та класами)
+[class*="-ibg"] {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+[class*="-ibg_contain"] {
+	img {
+		object-fit: contain;
+	}
+}
+
+// Шаблони (заготівлі)
+// @extend %ім'я шаблону;
+// Сніппет (SCSS): ex
+
+// Лічильник для списку
+%listCounter {
+	list-style-type: none;
+	counter-reset: item;
+	li {
+		position: relative;
+		&:before {
+			counter-increment: item;
+			content: counter(item);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+// Адаптивне відео
+%responsiveVideo {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+// Відео як фон
+%videoBackground {
+	video,
+	iframe,
+	object,
+	embed {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+}
+// Сірий фільтр
+%grayfilter {
+	transition: all 0.3s ease 0s;
+	filter: grayscale(1);
+	@media (any-hover: hover) {
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}
+// Скасувати виділення
+%noselect {
+	user-select: none;
+}
+// Дзеркальне відображення
+%mirror {
+	transform: scale(-1, 1);
+}
+// Плавний скролл
+%smoothscroll {
+	-webkit-overflow-scrolling: touch;
+}
+// Сховати скролл
+%hidescroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

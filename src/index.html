@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Layout «NEW_PROJECT_NAME»</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="decor">
+				<span class="decor-pc">
+					<img src="@img/preview-page/pc.png" alt="">
+				</span>
+				<span class="decor-tablet">
+					<img src="@img/preview-page/tablet.png" alt="">
+				</span>
+				<span class="decor-mobile">
+					<img src="@img/preview-page/mobile.png" alt="">
+				</span>
+			</div>
+			<div class="rootpage">
+				<h1>Layout «NEW_PROJECT_NAME»</h1>
+				<h2>finished pages:</h2>
+				<ol class="rootpage__list">
+					<li><a target="_blank" href="home.html">Main</a></li>
+					<li><a target="_blank" href="connect-wallet.html">Connect Wallet</a></li>
+					<li><a target="_blank" href="create-account.html">Create Account</a></li>
+					<li><a target="_blank" href="marketplace.html">Marketplace</a></li>
+					<li><a target="_blank" href="user.html">Artist</a></li>
+					<li><a target="_blank" href="nft.html">NFT-page</a></li>
+					<li><a target="_blank" href="rank.html">Rankings</a></li>
+				</ol>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #2b2b2b;
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+		}
+		a {
+			text-decoration: underline;
+			color: #fff;
+			transition: color 0.3s ease 0s;
+		}
+		a:visited {
+			text-decoration: underline;
+		}
+			a:hover {
+			text-decoration: none;
+			color: #ad73f8;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+		@media (max-width: 479px){
+			.wrapper::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(180deg, rgba(162, 89, 255, 0) 20%, #A259FF 100%);
+			z-index: 2;
+		}
+		}
+		.decor {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+		@media (max-width: 479px) {
+			.decor {
+				display: none;
+			}
+		}
+		.decor::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(180deg, rgba(162, 89, 255, 0) 20%, #a159ff6b 100%);
+			z-index: 2;
+		}
+		.decor-pc {
+			position: absolute;
+			height: 100vh;
+			bottom: 0;
+			right: 0;
+		}
+		.decor-pc img,
+		.decor-tablet img,
+		.decor-mobile img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		.decor-tablet {
+			position: absolute;
+			height: 80vh;
+			bottom: 0;
+			right: 0;
+			transform: translate(-60%, 0);
+		}
+		.decor-mobile {
+			position: absolute;
+			height: 65vh;
+			bottom: 0;
+			right: 0;
+			transform: translate(-230%, 0);
+		}
+		.rootpage{
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: relative;
+			z-index: 5;
+		}
+		@media (max-width: 767px) {
+			.rootpage{
+				padding:30px 15px;
+			}
+		}
+		h1 {
+			color: #ad73f8;
+			font-size: 40px;
+			line-height: 1.2;
+			margin: 0px 0px 50px 0px;
+		}
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 28px;
+			}
+		}
+		h2 {
+			color: #ad73f8;
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+		@media (max-width: 767px) {
+			 h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+		.rootpage__info{
+			line-height: 140%;
+			margin: 0px 0px 1.5rem 0px;
+		}
+
+		.rootpage__list{
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+		.rootpage__list li:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+	</style>
+</html>

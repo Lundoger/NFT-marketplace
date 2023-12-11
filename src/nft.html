@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"NFT Marketplace"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="nft">
+				<div class="nft__picture picture">
+					<img src="@img/user/picture.png" alt="image">
+				</div>
+				<section class="nft__about about-nft">
+					<div class="about-nft__container">
+						<div class="about-nft__body">
+							<div class="about-nft__item">
+								<h1 class="about-nft__title">The Orbitians</h1>
+								<div class="about-nft__date">Minted on Sep 30, 2022</div>
+							</div>
+							<div class="about-nft__item">
+								<div class="about-nft__label">Created By</div>
+								<a href="user.html" class="about-nft__user user">
+									<div class="user__avatar">
+										<img src="@img/avatars/gravity_one.png" alt="avatar">
+									</div>
+									<div class="user__nickname">GravityOne</div>
+								</a>
+							</div>
+							<div class="about-nft__item">
+								<div class="about-nft__label">Description</div>
+								<div class="about-nft__description">
+									<p>
+										The Orbitians is a collection of 10,000 unique NFTs on the Ethereum blockchain,
+									</p>
+									<p>
+										There are all sorts of beings in the NFT Universe. 
+										The most advanced and friendly of the bunch are Orbitians.
+									</p>
+									<p>
+										They live in a metal space machines, 
+										high up in the sky and only have one foot on Earth.
+										These Orbitians are a peaceful race, but they have 
+										been at war with a group of invaders for many 
+										generations. The invaders are called Upside-Downs, 
+										because of their inverted bodies that live on the ground, 
+										yet do not know any other way to be. Upside-Downs 
+										believe that they will be able to win this war if 
+										they could only get an eye into Orbitian territory, 
+										so they've taken to make human beings their target.
+									</p>
+								</div>
+							</div>
+							<div class="about-nft__item">
+								<div class="about-nft__label">Details</div>
+								<div class="about-nft__links">
+									<a href="" class="about-nft__link _icon-globe">View on Etherscan</a>
+									<a href="" class="about-nft__link _icon-globe">View Original</a>
+								</div>
+							</div>
+							<div class="about-nft__action">
+								<div class="about-nft__label">Tags</div>
+								<div class="about-nft__tags">
+									<a href="" class="about-nft__tag">Animation</a>
+									<a href="" class="about-nft__tag">illustration</a>
+									<a href="" class="about-nft__tag">moon</a>
+									<a href="" class="about-nft__tag">moon</a>
+								</div>
+							</div>
+						</div>
+						<div data-da=".about-nft__body, 710, 1" id="counter" class="countdown">
+							<div class="countdown__label">Auction ends in:</div>
+							<div class="countdown__body">
+								<div class="countdown__number">
+									<span class="counter-hours countdown__time"></span>
+									<span class="countdown__text">Hours</span>
+								</div>
+								<div class="countdown__number">
+									<span class="counter-minutes countdown__time"></span>
+									<span class="countdown__text">Minutes</span>
+								</div>
+								<div class="countdown__number">
+									<span class="counter-seconds countdown__time"></span>
+									<span class="countdown__text">Seconds</span>
+								</div>
+							</div>
+							<a href="" class="countdown__button button">Place Bid</a>
+						</div>
+					</div>	
+				</section>
+				<section class="nft__more more-nft">
+					<div class="more-nft__container">
+						<div class="more-nft__heading">
+							<h2 class="more-nft__title title">More from this artist</h2>
+							<a data-da=".more-nft__container, 570" href="" class="more-nft__button button button--border _icon-rocket">Go To Artist Page</a>
+						</div>
+						<div class="more-nft__body">
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/space-travel.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Space Travel</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/nebula_kid.png" alt="avatar">
+										</div>
+										<div class="user__nickname">NebulaKid</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/home/discover/03.jpg" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Cherry Blossom Girl 035</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/moon_dancer.png" alt="avatar">
+										</div>
+										<div class="user__nickname">MoonDancer</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/sunset-dimension.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Sunset Dimension</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/animakid.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Animakid</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/crypto-city.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Crypto City</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/animakid.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Animakid</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/space-tales.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Space Tales</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/animakid.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Animakid</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/life-on-edena.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Life On Edema</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/animakid.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Animakid</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/magic-mushroom.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Magic Mushroom 0325</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/shroomie.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Shroomie</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/happy-robot032.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Happy Robot 032</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/be_kind_2_robots.png" alt="avatar">
+										</div>
+										<div class="user__nickname">BeKind2Robots</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="more-nft__item card">
+								<a href="" class="card__image-ibg">
+									<img src="@img/marketplace/desert-walk.png" alt="image">
+								</a>
+								<div class="card__info">
+									<h4 class="card__name"><a href="" class="card__link-name">Desert Walk</a></h4>
+									<a href="user.html" class="card__user user">
+										<div class="user__avatar">
+											<img src="@img/avatars/dotgu.png" alt="avatar">
+										</div>
+										<div class="user__nickname">Dotgu</div>
+									</a>
+									<div class="card__prices">
+										<div class="card__price">
+											Price
+											<span>1.63 ETH</span>
+										</div>
+										<div class="card__price">
+											Highest Bid
+											<span>0.33 ETH</span>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

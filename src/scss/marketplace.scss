@@ -1,0 +1,81 @@
+.marketplace {
+	
+	&__search {
+		@include adaptiveValue("margin-top", 180, 95);
+	}
+	&__nfts {
+	}
+}
+//========================================================================================================================================================
+.search {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue("margin-bottom", 80, 40);
+	}
+
+	&__title {
+		@include adaptiveValue("font-size", 51, 28);
+		font-weight: 600;
+		line-height: 1.4;
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+
+	&__description {
+		@include adaptiveValue("font-size", 22, 16);
+		line-height: 1.4;
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	&__form {
+		&:not(:last-child) {
+			margin-bottom: rem(10);
+		}
+	}
+}
+.form-search {
+	position: relative;
+	&__input {
+		width: 100%;
+		height: rem(60);
+		border-radius: rem(20);
+		border: rem(1) solid #3b3b3b;
+		background: transparent;
+		@include adaptiveValue("padding-left", 30, 15, 1050, 480);
+		padding-right: rem(70);
+		color: #fff;
+		font-size: rem(20);
+		outline: none;
+		@media (max-width:$mobileSmall){
+			height: rem(48); 
+			padding-right: rem(55);
+			font-size: rem(16);
+		}
+	}
+	&__button {
+		position: absolute;
+		height: rem(60);
+		width: rem(60);
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: rem(20);
+		&::before{
+			font-size: rem(24);			
+		}
+		@media (max-width:$mobileSmall){
+			height: rem(48);
+			width: rem(48);
+			&::before{
+				font-size: rem(20);				
+			}
+		}
+	}
+}
+//========================================================================================================================================================

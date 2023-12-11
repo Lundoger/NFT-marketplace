@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"NFT Marketplace"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="rank">
+				<section class="rank__rating rating">
+					<div class="rating__container">
+						<div class="rating__heading">
+							<h1 class="rating__title">Top Creators</h1>
+							<div class="rating__subtitle">Check out top ranking NFT artists on the NFT Marketplace.</div>
+						</div>
+						<div data-tabs class="rating__tabs tabs-rating">
+							<nav data-tabs-titles class="tabs-rating__navigation">
+								<button type="button" class="tabs-rating__title _tab-active">
+									<span class="tabs-rating__title--pc">Today</span>
+									<span class="tabs-rating__title--mobile">1d</span>
+								</button>
+								<button type="button" class="tabs-rating__title">
+									<span class="tabs-rating__title--pc">This Week</span>
+									<span class="tabs-rating__title--mobile">7d</span>
+								</button>
+								<button type="button" class="tabs-rating__title">
+									<span class="tabs-rating__title--pc">This Month</span>
+									<span class="tabs-rating__title--mobile">30d</span>
+								</button>
+								<button type="button" class="tabs-rating__title">
+									<span class="tabs-rating__title--pc">All Time</span>
+									<span class="tabs-rating__title--mobile">All</span>
+								</button>
+							</nav>
+							<div class="tabs-rating__label">
+								<div class="tabs-rating__number">#</div>
+								<div class="tabs-rating__user">Artist</div>
+								<div class="tabs-rating__value tabs-rating__change">Change</div>
+								<div class="tabs-rating__value tabs-rating__sold">NFTs Sold</div>
+								<div class="tabs-rating__value tabs-rating__volume">Volume</div>
+							</div>
+							<div data-tabs-body class="tabs-rating__content">
+								<div class="tabs-rating__body">
+									<div class="tabs-rating__items">
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">1</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">2</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/dotgu.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">3</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/moon_dancer.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">4</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/nebula_kid.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">5</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/digilab.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">6</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/animakid.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">7</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/rusty_robot.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">8</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/gravity_one.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">9</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/space_one.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">10</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/robotica.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">11</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">12</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">13</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">14</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">15</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">16</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">17</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">18</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">19</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">20</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-rating__body">
+									<div class="tabs-rating__items">
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">1</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">2</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/dotgu.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">3</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/moon_dancer.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">4</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/nebula_kid.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-rating__body">
+									<div class="tabs-rating__items">
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">1</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">2</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/dotgu.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">3</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/moon_dancer.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">4</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/nebula_kid.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-rating__body">
+									<div class="tabs-rating__items">
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">1</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/keep_it_real.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Jaydon Ekstrom Bothman</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">2</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/dotgu.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">3</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/moon_dancer.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+										<div class="tabs-rating__item item-rating">
+											<div class="item-rating__number">4</div>
+											<div class="item-rating__user">
+												<a href="user.html" class="item-rating__avatar">
+													<img src="@img/avatars/nebula_kid.png" alt="avatar">
+												</a>
+												<a href="user.html" class="item-rating__nickname">Davis Franci</a>
+											</div>
+											<div class="item-rating__value item-rating__change">+1.41%</div>
+											<div class="item-rating__value item-rating__sold">602</div>
+											<div class="item-rating__value item-rating__volume">12.4 ETH</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
