@@ -40,7 +40,7 @@ if (mainPage) {
 		var timeinterval = setInterval(updateClock, 1000);
 	}
 	
-	const deadline = "January 30 2024 00:00:00 GMT+0300"; //for Ukraine
+	const deadline = "January 1 2024 00:00:00 GMT+0300"; //for Ukraine
 	// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
 	initializeClock("countdown", deadline);
 }
