@@ -6,5 +6,6 @@ The 7-page NFT marketplace is a modern and innovative project. Built using the B
 - Scss & Scss mixins
 - GULP & WEBPACK
 - Responsive adaptive
+- Swiper.js
 # Preview:
 [NFT-maketplace](https://nft-maketplace-lundoger.netlify.app/)
